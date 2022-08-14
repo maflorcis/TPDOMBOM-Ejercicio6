@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Etiquetas Meta -->
 <meta name="description" content="Practica DOM" />
-<meta name="keywords" content="Practico de elementos del DOM-BOM - EJERCICIO 1" />
+<meta name="keywords" content="Practico de elementos del DOM-BOM - EJERCICIO 6" />
 <meta name="author" content="Maria Florencia Alonso" />
 
 <!-- CSS only -->
@@ -14,18 +14,36 @@
 
 <link rel="stylesheet" href="css/style2.css"
 
-    <title>Ejercicio de contador</title>
+   
 </head>
-<body>
+<body class="container">
 <main>
 
-    <h1>Countdown Timer</h1>
-    <div id="container">
-        <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Seconds</p>
-        <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
-        <button id="start" class="btn">Start</button>
-        <button id="reset" class="btn">Reset</button>
+    <h1 class="container display-1  text-center mt-5">Cuenta Regresiva</h1>
+    <section id="container" class="tablero row text-center m-2">
+        <div class="col-4 p-3">
+        <p id="hour-label" class="label">Horas</p>
+                <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon"></p>
+        </div>
+        <div class="col-4 p-3">
+        <p id="min-label" class="label">Minutos</p>
+        <input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon"></p>
+        </div>
+        <div class="col-4 p-3">
+        <p id="sec-label" class="label">Segundos</p>
+        <input id="sec" type="number" max="60" min="0" value="0" class="time">
+        </div>          
+    </section>
+    
+    <section class="text-center">
+        <button id="start" class="btn btn-secondary my-3">Start</button>
+        <button id="reset" class="btn btn-primary">Reset</button>
+    </section>
+
+    <div class="text-center">
+        <img src="https://media.giphy.com/media/3oxRmvU3GAJay6F60g/giphy.gif" >
     </div>
+    
 
 </main>
 <!-- JavaScript Bundle with Popper -->
